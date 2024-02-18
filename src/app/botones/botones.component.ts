@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './botones.component.css'
 })
 export class BotonesComponent {
-
+  textColor:string = "";
+  btndisable:boolean = false;
 }
