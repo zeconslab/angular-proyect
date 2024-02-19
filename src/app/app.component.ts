@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import Swal from 'sweetalert2';
-import {BotonesComponent} from "./botones/botones.component";
-import { LoginAreaComponent } from "./login-area/login-area.component";
+import {BotonesComponent} from "./components/botones/botones.component";
+import { LoginAreaComponent } from "./components/login-area/login-area.component";
+import { HttpClientModule } from "@angular/common/http";
+import { UserComponent } from "./components/user/user.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BotonesComponent, LoginAreaComponent],
+  imports: [RouterOutlet, BotonesComponent, LoginAreaComponent, HttpClientModule,UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
